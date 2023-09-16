@@ -1,0 +1,18 @@
+<!-- website/templates/home/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<a href="{% url 'home' %}">Home</a>
+<head>
+    <meta charset="UTF-8">
+    <title>Our Wedding</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Wedding</h1>
+    </header>
+    <main>
+        <p>Save the date: {{ couple.wedding_date }}</p>
+        <p>Contact us at: {{ couple.contact_email }}</p>
+    </main>
+</body>
+</html>
